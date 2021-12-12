@@ -1,0 +1,21 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<professor>
+<p_name>박춘식</p_name>
+<p_major>정보보호학과</p_major>
+</professor>
+<professor>
+<p_name>허종호</p_name>
+<p_major>경영학과</p_major>
+</professor>
+<professor>
+<p_name>이동일</p_name>
+<p_major>수학과</p_major>
+</professor>
+<professor>
+<p_name>John Francis Kinsler</p_name>
+<p_major>영어영문학과</p_major>
+</professor>
+<professor>
+<p_name>a</p_name>
+<p_major>math</p_major>
+</professor>

@@ -1,0 +1,34 @@
+﻿<head>
+<meta http-equiv = "content-Type" content = "text/html" charset = "utf-8">
+</head> <!-- 占쎌쥙�⑵짆袁�쐻�좎뜾異�옙臾믪굲�좎룞�섵B占쎌쥙猷욑옙�탏f-8_unicode_ci占싸뀀뙔占쎌늹異�옙�좊뮛�꾬옙堉뀐옙�뗭삕�⑥궢猷뽳옙醫롫윥筌�쨪�쇿뜝�뀀쐻占쎌늿�뺧옙醫롫윞占쎈뱾�▼뜝�뀀쐻占쎈뜆�⒴뜝�숈삕-->
+<?php
+$connect = mysql_connect("127.0.0.1", "root", "apmsetup"); //DB占쎈씈猷딉옙�용쐻占쎈뜄�욃뜝�숈삕占쎈굝�ｏ옙�볦삕�좎뜴�앾옙�덈섕占썩뒫�우굲占쎌쥙猷욑옙�껁궘�좎�留뗰옙類��占싼귣뭄�좎뜾異�옙�낃텥�좎룞�숋옙醫롫윥筌ㅻ㉡�숋옙�덉굲�좎럥�θ짆占쏙옙濡ろ뜏占쎈톪�숃��⒟э옙醫롫짗占쎌닂�쇿뜝�숈삕占쎌눨�앾옙諛몄��좎룞�숋옙袁ㅻ쎗占쎈맩�뺧옙�낆뒩占쎌꼻�숋옙�롢걫占쎌쥙猷욑옙�뗭삕占쎌궡��占쎌쥙猷욑옙占�mysql_selectdb("zero"); //DB 占쎌쥙�⒳펺�⑦떐�좑옙mysql_query("set names UTF8"); //占쎌쥙�ο옙占쎈뼀�좎뜴�앾옙�뚯삕占쎈맮�숋옙醫롫윪獒뺢쐼�앭뜝�몋f8)占쎌쥙猷욑옙�귥땡占쎈쵐�뺝뜝�뚮묄占쎌닂�숋옙�꾨탿 占쎌쥙�∽옙�ㅻ눀�좎띂��뙼蹂�굲
+mysql_selectdb("zero");
+mysql_selectdb("consult"); 
+mysql_query("set names UTF8");
+
+	
+	$stu_name=$_REQUEST['stu_name'];
+	$stu_no=$_REQUEST['stu_no'];
+	$stu_major=$_REQUEST['stu_major'];
+	$stu_phone=$_REQUEST['stu_phone'];
+	$perpose=$_REQUEST['perpose'];
+	$year=$_REQUEST['year'];
+	$month=$_REQUEST['month'];
+	$day=$_REQUEST['day'];
+	$time=$_REQUEST['time'];
+	$p_no=$_REQUEST['p_no'];
+	 
+$result=  mysql_result(mysql_query("select count(stu_name) from reservation where stu_name='$stu_name' AND stu_no='$stu_no' AND yesno=2 AND ready=2 and year='$year' and month='$month' and day='$day' and time='$time';"),0);
+
+ 
+$xmlcode = "<?xml version = \"1.0\" encoding = \"UTF-8\" ?>\n"; //xml占쎌쥙�ο옙節륁삕占쎈쪇�뺧옙醫롫쑟��뵃�숋쭚�쇱죷占쎌쥙猷욑옙�뗭삕熬곣뫀占썹뛾占쎌삕
+
+$xmlcode .= "<result>$result</result>\n"; //DB inse1rt占쎈씈猷딉옙�용쐻占쎄쑵�㎩뜝�쇰씮�뺧옙�ㅼ굣筌뤿뱶�뽳옙�뚯굲占쎌쥙�ν걫�좎럩占썲퐲�낅쐻占쎌늿�뺝뜝�뀀쐻占쎈갭�뷂옙醫롫짗占쎌닂彛싷옙�곕뜲占쎌쥙�⑴몭�좊뎨�좎뜴�앾옙袁⑸쳯占쏙옙�셱esult占쎈씈猷녶뜝�숈삕�좏릶ml占싸뀀뙔占쎌닂�숁��レ툓�좎럡��옙�뗭삕占썬굥占�
+ 
+$dir = "C:/APM_Setup/htdocs"; //insertresult.xml 占쎌쥙�ο옙節륁삕占쎈쪇�뺧옙醫롫짗占쎌눨�앾옙��텑占쎌쥙猷욑옙�낅눇�용뿫�ι쨹恝��
+$filename = $dir."/consult/reservation_fail.xml"; 
+
+file_put_contents($filename, $xmlcode); //xmlcode占쎌쥙猷욑옙�용쐻占쎈뜄�띶뜝�뚮츐占쎌눨�앾옙遊쳊占쎌쥙�ο옙節륁삕占쎈냱肉됵옙醫롫쑟��뵃�숋쭚�쇱죷
+?>
+

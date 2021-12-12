@@ -1,0 +1,21 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<check>
+<year>2016</year>
+<month>11</month>
+<day>24</day>
+<time>13:00~14:00</time>
+<stu_name>Eunseo_OH</stu_name>
+<stu_no>2013110996</stu_no>
+<problem>learning</problem>
+<stu_major>business</stu_major>
+</check>
+<check>
+<year>2016</year>
+<month>11</month>
+<day>24</day>
+<time>15:00~16:00</time>
+<stu_name>Eunseo_OH</stu_name>
+<stu_no>2013110996</stu_no>
+<problem>studying</problem>
+<stu_major>business</stu_major>
+</check>

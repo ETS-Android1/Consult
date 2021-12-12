@@ -1,0 +1,22 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<student>
+<stu_no>123</stu_no>
+<stu_name>jojun</stu_name>
+<stu_password>123</stu_password>
+<stu_major>math</stu_major>
+<stu_phone>01021313213</stu_phone>
+</student>
+<student>
+<stu_no>2013110996</stu_no>
+<stu_name>Eunseo_OH</stu_name>
+<stu_password>1234</stu_password>
+<stu_major>business</stu_major>
+<stu_phone>01000000000</stu_phone>
+</student>
+<student>
+<stu_no>2013111111</stu_no>
+<stu_name>oh</stu_name>
+<stu_password>1111</stu_password>
+<stu_major>math</stu_major>
+<stu_phone>010456789</stu_phone>
+</student>
