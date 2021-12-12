@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.consult"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="21" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Intro"
+            android:label="@string/title_activity_intro" >
+        </activity>
+        <activity
+            android:name=".Professor_login"
+            android:label="@string/title_activity_professor_login" >
+        </activity>
+        <activity
+            android:name=".Create_admin"
+            android:label="@string/title_activity_create_admin" >
+        </activity>
+        <activity
+            android:name=".Conform_no"
+            android:label="@string/title_activity_conform_no" >
+        </activity>
+        <activity
+            android:name=".Personal_login"
+            android:label="@string/title_activity_personal_login" >
+        </activity>
+        <activity
+            android:name=".Create_student"
+            android:label="@string/title_activity_create_student" >
+        </activity>
+        <activity
+            android:name=".Professor_list"
+            android:label="@string/title_activity_professor_list" >
+        </activity>
+        <activity
+            android:name=".Calendar"
+            android:label="@string/title_activity_calendar" >
+        </activity>
+        <activity
+            android:name=".Time_pick"
+            android:label="@string/title_activity_time_pick" >
+        </activity>
+        <activity
+            android:name=".Send"
+            android:label="@string/title_activity_send" >
+        </activity>
+        <activity
+            android:name=".Send_ok"
+            android:label="@string/title_activity_send_ok" >
+        </activity>
+        <activity
+            android:name=".Personal_reservation_check"
+            android:label="@string/title_activity_personal_reservation_check" >
+        </activity>
+        <activity
+            android:name=".After_consult_student_list"
+            android:label="@string/title_activity_after_consult_student_list" >
+        </activity>
+        <activity
+            android:name=".After_consult"
+            android:label="@string/title_activity_after_consult" >
+        </activity>
+        <activity
+            android:name=".Insert_content_after_consult"
+            android:label="@string/title_activity_insert_content_after_consult" >
+        </activity>
+        <activity
+            android:name=".My_student_list"
+            android:label="@string/title_activity_my_student_list" >
+        </activity>
+        
+          <service android:name=".BackgroundSearch" >
+        </service>
+        
+        <activity
+            android:name=".Insert_student"
+            android:label="@string/title_activity_insert_student" >
+        </activity>
+        <activity
+            android:name=".P_tab_consult_student_list"
+            android:label="@string/title_activity_p_tab_consult_student_list" >
+        </activity>
+        <activity
+            android:name=".Student_zoom"
+            android:label="@string/title_activity_student_zoom" >
+        </activity>
+    </application>
+    
+     <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+
+</manifest>
